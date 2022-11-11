@@ -98,7 +98,7 @@ img {
 .list {
   display: flex;
   gap: 50px;
-  margin-right: auto;
+  margin-right: 314px;
   
 }
 .header-link {
@@ -131,6 +131,14 @@ img {
   text-align: center;
   padding-bottom: 200px;
   padding-top: 200px;
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)), 
+  url(../images/hero.jpg);
+  
 }
 .hero-title {
   
@@ -182,10 +190,16 @@ img {
   font-size: 14px;
   line-height: 1.7142;
 }
-.features-icon{
-  width: 65px;
-  height: 70px;
-}
+.features-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F5F4FA;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+} 
 /* робота */
 .section.works {
   padding-top: 0;
@@ -228,8 +242,67 @@ border-radius: 0px 0px 4px 4px;
   font-size: 16px;
   line-height: 1.1875;
   margin-top: 10px;
+  margin-bottom: 16px;
+}
+.networks-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--primary-white-color);
+}
+.networks {
+  width: 44px;
+  height: 44px;
+}
+.networks-link{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  fill: #AFB1B8;
+}
+.networks-link:hover,
+.networks-link:focus {
+  background-color: var(--accent-color);
+}
+.networks-link:hover .networks-icon {
+  fill: var(--primary-white-color);
+}
+
+/* Клієнти */
+.client-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+ 
+}
+.client-item {
+  width: 170px;
+  height: 92px;
   
 }
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  fill: #AFB1B8;
+}
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+.client-logo {
+  fill: currentColor;
+}
+
 
 /* Портфоліо кнопки */
 .filter-list {
@@ -240,7 +313,7 @@ border-radius: 0px 0px 4px 4px;
 .filter-link:not(:last-child) {
   margin-right: 8px;
 }
-.button all {
+.button.all {
   padding: 6px 25px;
 }
 .button {
@@ -297,34 +370,16 @@ border-radius: 0px 0px 4px 4px;
 .projects-list {
   display: block;
 }
-/* Клієнти */
-.client-list {
-  width: 170px;
-  height: 92px;
-  padding: 16px 32px;
-  
-}
-.client-link {
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
-}
-.client-link:hover,
-.client-link:focus {
-  color: var(--accent-color);
-}
-.client-Logo {
-width: 106px;
-display: flex;
-height: 60px;
-fill: #AFB1B8;
-}
+
 /* підвал */
 .footer {
   background-color: #2f303a;
+  
 }
 .footer-container{
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
 }
 .logo-footer {
   color: var(--primary-white-color);
@@ -366,10 +421,36 @@ fill: #AFB1B8;
   color: var(--accent-color);
 }
 /* Приєднуйтесь */
-.join {
-  color: var(--primary-white-color);
+.join-text {
   font-weight: 700;
-font-size: 14px;
-line-height: 1.1428;
-
+  font-size: 14px;
+  line-height: 1.1428;
+  color: var(--primary-white-color);
+}
+.join {
+  margin-left: 70px;
+}
+.join-list {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+.join-item {
+  width: 44px;
+  height: 44px;
+}
+.join-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  fill: #FFFFFF;
+  background: rgba(255, 255, 255, 0.1);
+}
+.join-link:hover,
+.join-link:focus {
+  background-color: var(--accent-color);
 }
