@@ -98,7 +98,7 @@ img {
 .list {
   display: flex;
   gap: 50px;
-  margin-right: 344px;
+  margin-right: auto;
   
 }
 .header-link {
@@ -107,7 +107,7 @@ img {
   font-size: 14px;
   line-height: 1.1428;
   letter-spacing: 0.02em;
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -118,6 +118,11 @@ img {
 .communication {
   display: flex;
   gap: 50px;
+  align-items: center;
+}
+.communication-icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 /* герої */
@@ -176,6 +181,10 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7142;
+}
+.features-icon{
+  width: 65px;
+  height: 70px;
 }
 /* робота */
 .section.works {
@@ -288,6 +297,27 @@ border-radius: 0px 0px 4px 4px;
 .projects-list {
   display: block;
 }
+/* Клієнти */
+.client-list {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  
+}
+.client-link {
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
+}
+.client-Logo {
+width: 106px;
+display: flex;
+height: 60px;
+fill: #AFB1B8;
+}
 /* підвал */
 .footer {
   background-color: #2f303a;
@@ -334,4 +364,12 @@ border-radius: 0px 0px 4px 4px;
 .footer-link:focus,
 .footer-link:hover {
   color: var(--accent-color);
+}
+/* Приєднуйтесь */
+.join {
+  color: var(--primary-white-color);
+  font-weight: 700;
+font-size: 14px;
+line-height: 1.1428;
+
 }
