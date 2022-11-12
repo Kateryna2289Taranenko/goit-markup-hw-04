@@ -98,7 +98,7 @@ img {
 .list {
   display: flex;
   gap: 50px;
-  margin-right: 314px;
+  margin-right: 318px;
   
 }
 .header-link {
@@ -110,6 +110,7 @@ img {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 }
 .header-link:hover,
 .header-link:focus {
@@ -117,7 +118,7 @@ img {
 }
 .communication {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   align-items: center;
 }
 .communication-icon {
@@ -163,6 +164,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);;
 }
 .button-order:hover,
 .button-order:focus {
@@ -335,6 +337,7 @@ border-radius: 0px 0px 4px 4px;
 .button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow:  0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* проекти */
 .card-list{
@@ -369,6 +372,9 @@ border-radius: 0px 0px 4px 4px;
 }
 .projects-list {
   display: block;
+}
+.projects-list:hover {
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* підвал */
