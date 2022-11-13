@@ -273,7 +273,9 @@ border-radius: 0px 0px 4px 4px;
 .networks-link:hover .networks-icon {
   fill: var(--primary-white-color);
 }
-
+.networks-link:focus .networks-icon {
+  fill: var(--primary-white-color);
+}
 /* Клієнти */
 .client-list {
   display: flex;
@@ -386,6 +388,7 @@ border-radius: 0px 0px 4px 4px;
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
+  align-items: baseline;
 }
 .logo-footer {
   color: var(--primary-white-color);
@@ -427,14 +430,14 @@ border-radius: 0px 0px 4px 4px;
   color: var(--accent-color);
 }
 /* Приєднуйтесь */
+.join {
+  margin-left: 70px; 
+}
 .join-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428;
   color: var(--primary-white-color);
-}
-.join {
-  margin-left: 70px;
 }
 .join-list {
   display: flex;
